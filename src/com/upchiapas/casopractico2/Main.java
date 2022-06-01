@@ -1,5 +1,6 @@
 package com.upchiapas.casopractico2;
 
+import com.upchiapas.casopractico2.models.Participante;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -7,6 +8,9 @@ public class Main {
     static int contador = 0;
     static boolean bandera = false;
     static boolean bandera2 = false;
+    //llamamos al constructor vacio
+    public Participante individuo = new Participante();
+
 
     public static void main(String[] args){
         visualizarRegistro();

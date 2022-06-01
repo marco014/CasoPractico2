@@ -6,6 +6,10 @@ public class Participante {
     private String lugar;
     private int seccion = 0;
 
+    public Participante() {
+        //CONSTRUCTOR
+    }
+
     public Participante(String part, int folio, String lugar) {
         this.participante = part;
         this.folio = folio;
@@ -14,6 +18,10 @@ public class Participante {
 
     public String getParticipante() {
         return participante;
+    }
+
+    public void setParticipante(String participante) {
+        this.participante = participante;
     }
 
     public int getSeccion(){
@@ -29,7 +37,15 @@ public class Participante {
         return folio;
     }
 
+    public void setFolio(int folio) {
+        this.folio = folio;
+    }
+
     public String getLugar() {
         return lugar;
+    }
+
+    public void setLugar(String lugar) {
+        this.lugar = lugar;
     }
 }
