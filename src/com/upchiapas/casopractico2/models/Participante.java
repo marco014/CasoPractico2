@@ -1,19 +1,14 @@
 package com.upchiapas.casopractico2.models;
-
 public class Participante {
     private String participante;
-    private int folio;
+    private String folio;
     private String lugar;
     private int seccion = 0;
-
-    public Participante() {
-        //CONSTRUCTOR
-    }
-
-    public Participante(String part, int folio, String lugar) {
+    public Participante(String part, String folio, String lugar, int seccion) {
         this.participante = part;
         this.folio = folio;
         this.lugar = lugar;
+        this.seccion = seccion;
     }
 
     public String getParticipante() {
@@ -31,13 +26,12 @@ public class Participante {
     public void setSeccion(int seccion)
     {
         this.seccion =  seccion;
-
     }
-    public int getFolio() {
+    public String getFolio() {
         return folio;
     }
 
-    public void setFolio(int folio) {
+    public void setFolio(String folio) {
         this.folio = folio;
     }
 
@@ -47,5 +41,15 @@ public class Participante {
 
     public void setLugar(String lugar) {
         this.lugar = lugar;
+    }
+
+    @Override
+    public String toString() {
+        return "Participante{" +
+                "participante='" + participante + '\'' +
+                ", folio=" + folio +
+                ", lugar='" + lugar + '\'' +
+                ", seccion=" + seccion +
+                '}';
     }
 }
